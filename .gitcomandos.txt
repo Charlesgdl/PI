@@ -1,0 +1,15 @@
+cria um bloco de nota .gitcomandos e salva na sua pasta do projeto
+
+//Primeiro comandos para upar uma pasta no github
+- git init
+- git add .
+-git commit -m "primeiro git"
+-git remote add origin https ;........
+-git status
+-git push -u origin master 
+
+//Para atualizar 
+git status
+git add .
+git commit  "segunda atividade"
+git push origin master
