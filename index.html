@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="tabela.js"></script>
+    <script type="text/javascript" src="vogais.js"></script>
+    <script type="text/javascript" src="negativo.js"></script>
+    <title>Sample code - Traversing an HTML Table with JavaScript and DOM Interfaces</title>
+
+   <style>
+     .preto{
+         padding: 10px;
+         background-color: black;
+     }
+     .branco{
+         padding: 10px;
+         background-color:white;
+     }
+    </style>
+</head>
+
+
+<body onload="">
+   <input type="number" id="largura" placeholder="informe a largura" /> 
+  <input type="number" id="altura" placeholder="informe a altura"/>
+
+  <input type="radio" name="grade" value="semGrade" id="grade" checked>Sem grade
+  <input type="radio" name="grade" value="comGrade" id="semgrade"> Com grade
+  
+ <button onclick="criarTabela()">Criar tabela</button><br><br>
+
+  <select id="vogal">
+    <OPtion value="">--Escolha uma vogal--</OPtion>
+    <option value="A">Vogal A</option>
+    <option value="E">Vogal E</option>
+    <option value="I">Vogal I</option>
+    <option value="O">Vogal O</option>
+    <option value="U">Vogal U</option>
+</select>
+  <button onclick="exibirVogal()">Mostrar Vogal</button><br><br>
+
+  <input type="number" id="inicioLinha" placeholder="iniciar na linha (negativo)"/>
+  <input type="number" id="negativoAltura" placeholder="terminar na linha (negativo)"/>
+
+  <input type="number" id="inicioColuna" placeholder="iniciar na coluna (negativo)" /> 
+  <input type="number" id="negativoLargura" placeholder="Terminar na coluna (negativo)" /> 
+  <button onclick="geraNegativo()">Gerar negativo</button><br><br>
+
+</body>
+</html>
