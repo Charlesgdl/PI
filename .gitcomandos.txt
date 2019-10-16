@@ -11,5 +11,5 @@ cria um bloco de nota .gitcomandos e salva na sua pasta do projeto
 //Para atualizar 
 git status
 git add .
-git commit  "segunda atividade"
+git commit -m "segunda atividade"
 git push origin master
