@@ -1,53 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="tabela.js"></script>
-    <script type="text/javascript" src="vogais.js"></script>
-    <script type="text/javascript" src="negativo.js"></script>
-    <title>Sample code - Traversing an HTML Table with JavaScript and DOM Interfaces</title>
 
-   <style>
-     .preto{
-         padding: 10px;
-         background-color: black;
-     }
-     .branco{
-         padding: 10px;
-         background-color:white;
-     }
-    </style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link href="style.css" rel="stylesheet">
+  <script type="text/javascript" src="tabela.js"></script>
+  <!--<script type="text/javascript" src="vogais.js"></script>-->
+  <script type="text/javascript" src="desenho.js"></script>
+  <script type="text/javascript" src="negativo.js"></script>
+  <script type="text/javascript" src="escalaCinza.js"></script>
+  <script type="text/javascript" src="figurasGeometricas.js"></script>
+
+  <title>Processamento de Imagens Digital</title>
 </head>
 
+<div class="n2" style="display: block; background-color: darkgray  ">
+  <input type="radio" name="grade" value="grade" id="grade">Grade
+  <input type="radio" name="grade" value="semGrade" id="semgrade" checked> Sem grade <br>
 
-<body onload="">
-   <input type="number" id="largura" placeholder="informe a largura" /> 
-  <input type="number" id="altura" placeholder="informe a altura"/>
+  <select style="margin: 10px" id="corFundo">
+    <OPtion value="">--Escolha uma cor de fundo--</OPtion>
+    <option value="preto">Preto</option>
+    <option value="vermelho">Vermelho</option>
+    <option value="amarelo">Amarelo</option>
+    <option value="verde">Verde</option>
+  </select>
+  <input min="30" type="number" id="largura" placeholder="informe a largura" />
+  <input min="25" type="number" id="altura" placeholder="informe a altura" />
 
-  <input type="radio" name="grade" value="semGrade" id="grade" checked>Sem grade
-  <input type="radio" name="grade" value="comGrade" id="semgrade"> Com grade
-  
- <button onclick="criarTabela()">Criar tabela</button><br><br>
 
-  <select id="vogal">
-    <OPtion value="">--Escolha uma vogal--</OPtion>
-    <option value="A">Vogal A</option>
-    <option value="E">Vogal E</option>
-    <option value="I">Vogal I</option>
-    <option value="O">Vogal O</option>
-    <option value="U">Vogal U</option>
-</select>
-  <button onclick="exibirVogal()">Mostrar Vogal</button><br><br>
 
-  <input type="number" id="inicioLinha" placeholder="iniciar na linha (negativo)"/>
-  <input type="number" id="negativoAltura" placeholder="terminar na linha (negativo)"/>
+  <button onclick="criarTabela()">Criar tabela</button><br>
 
-  <input type="number" id="inicioColuna" placeholder="iniciar na coluna (negativo)" /> 
-  <input type="number" id="negativoLargura" placeholder="Terminar na coluna (negativo)" /> 
-  <button onclick="geraNegativo()">Gerar negativo</button><br><br>
+  <select style="margin: 10px" id="desenho">
+    <OPtion value="">--Escolha um Desenho--</OPtion>
+    <option value="quadrado_">Quadrado</option>
+    <option value="retangulo_">Retangulo</option>
+    <option value="triangulo_">Triangulo</option>
+    <option value="losango_">Losango</option>
+    <option value="circulo_">Circulo</option>
+    <option value="vogalA">Vogal A</option>
+    <option value="vogalE">Vogal E</option>
+    <option value="vogalI">Vogal I</option>
+    <option value="vogalO">Vogal O</option>
+    <option value="vogalU">Vogal U</option>
+  </select>
 
+  <button onclick="exibirDesenho()">Mostrar Figura</button>
+  <button onclick="escalaDeCinza()">Escala de cinza</button><br><br>
+
+  <input style="margin: 10px" type="number" id="inicioLinha" placeholder="iniciar na linha (negativo)" />
+  <input type="number" id="negativoAltura" placeholder="terminar na linha (negativo)" />
+
+  <input type="number" id="inicioColuna" placeholder="iniciar na coluna (negativo)" />
+  <input type="number" id="negativoLargura" placeholder="Terminar na coluna (negativo)" />
+  <button onclick="geraNegativo()">Gerar negativo</button>
+  <h4 style="padding: 10px"><a href="">Recarregar Página</a></h4>
+
+
+</div>
 </body>
+
 </html>

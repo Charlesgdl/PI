@@ -1,0 +1,24 @@
+ .preto{
+         padding: 15px;
+         background-color: black;
+     }
+     .branco{
+         padding: 15px;
+         background-color: white;
+     }
+    
+     .vermelho{
+        padding: 15px;
+        background-color: red;
+    }
+
+    .verde{
+        padding: 15px;
+        background-color: green;
+    }
+
+    .amarelo{
+        padding: 15px;
+        background-color: yellow;
+    }
+   
