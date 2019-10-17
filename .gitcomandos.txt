@@ -13,3 +13,6 @@ git status
 git add .
 git commit -m "segunda atividade"
 git push origin master
+
+//clonar projeto
+git clone 'https://github.com/Charlesgdl/PI.git'
