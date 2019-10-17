@@ -16,3 +16,7 @@ git push origin master
 
 //clonar projeto
 git clone 'https://github.com/Charlesgdl/PI.git'
+
+//informar seu nome e email no git
+git config --global user.name "seu nome"
+git config --global user.email "seu Email"
