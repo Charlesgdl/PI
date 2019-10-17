@@ -23,3 +23,9 @@ git config --global user.email "seu Email"
 
 //Atualizando o projeto no seu PC
 git pull
+
+//reverter modificações
+git reset --soft + codigo (reverte)
+-soft - volta apenas o commit sem mexer nas alterações
+-mixed - volta o commit e falta ainda o add
+-hard = exclui o comite a alterações e arquivos(não recomendado)
